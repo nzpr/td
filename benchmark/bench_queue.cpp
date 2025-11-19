@@ -22,12 +22,12 @@
 #include <pthread.h>
 #include <sched.h>
 #include <semaphore.h>
-#include <sys/syscall.h>
 #include <unistd.h>
 #endif
 
 #if TD_LINUX
 #include <sys/eventfd.h>
+#include <sys/syscall.h>
 #endif
 
 #define MODE std::memory_order_relaxed
